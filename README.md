@@ -9,17 +9,16 @@ Today we learned 6 different concepts :
 Standard output is the successful output that a program shows on the screen after a successful execution.
 
 Example : 
-
-{code}
-ls , pwd
-{code}
+```
+ls 
+pwd
+```
 
 
 Some commands that don't return a standard output like mkdir can be used with certain options to force it to return a standard output, ex.
-
-{code}
+```
 mkdir -v algo
-{code}
+```
 
 
 * Redirecting standard output
@@ -28,34 +27,34 @@ There are some commands like echo who's sole purpose is to return a standard out
 A very commonly used scenario for echo command is to pair it with a redirection symbol to redirect the output into files (write stuff to files)
 
 
-{code}
+```
 echo "this will get redirected to a file" > file.txt
-{code}
+```
 
 another common way of redirection is to use double redirect symbol to append or stack more content at the end of the line of the file being created
 
-{code}
+```
 echo "line 2" >> file.txt
-{code}
+```
 
 * Variable declaration and expansion
 When writing a shell script we can declare variables that will be used through out of the script execution. For instance
 
-{code}
+```
 NAME="Angelica"
-{code}
+```
 
 We can expand the content of the variable using the dollar sign in bash
 
-{code}
+```
 echo $NAME
-{code}
+```
 
 This knowledge can be stacked by redirecting variables to files with echo the same way we did it on the last lesson
 
-{code}
+```
 echo $NAME > file.txt
-{code}
+```
 
 
 * For loops
