@@ -1,4 +1,15 @@
 # Linux shell scripting tutorial
+This is a tutorial I created when learning shell scripting with bash myself.
+
+# Table of contents
+1. [variables](https://github.com/bash_scripting_tutorial/variables)
+2. [comand line arguments](https://github.com/bash_scripting_tutorial/command_line_arguments)
+3. etc...
+4. [ifelif](https://github.com/angelicamacias/bash_scripting_tutorial/tree/main/ifelif)
+5. [while](https://github.com/angelicamacias/bash_scripting_tutorial/tree/main/while)
+
+
+
 
 
 Today we learned 6 different concepts :
