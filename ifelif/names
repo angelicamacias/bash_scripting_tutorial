@@ -1,0 +1,11 @@
+#!/bin/bash 
+
+Var=$1
+
+if [[ $1 = Juan  ]]; then 
+   echo "Martinez"
+elif [[ $1 = Angelica ]]; then 
+   echo "Macias"
+fi
+
+
