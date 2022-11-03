@@ -1,4 +1,5 @@
 #!/bin/bash
+# Author : Angelica Macias
 
 COUNTRIES="USA UK India"
 

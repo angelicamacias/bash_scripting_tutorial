@@ -1,0 +1,13 @@
+#!/bin/bash 
+
+name=$1
+
+
+case $name in 
+
+	"Juan") echo "Juan Martinez" 
+	;;
+
+        "Angelica") echo "Angelica Macias" 
+	;;
+esac
