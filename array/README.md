@@ -91,3 +91,35 @@ values you cant to bring from this.
 # How to store the commands output in a normal variable?
 
 For store a commands output in a normal variable we need follow this syntax
+				* unset <nameArray> *
+
+But if we want update an existing array 
+
+
+```
+# With @ we call to all values 
+~$ myarray=(1 2 3)
+~$ Myarray+=(4 5 6)
+~$ echo "${myarray[@]}"
+1 2 3 4 5 6
+
+-How to read array using read command?
+
+So using -a and varable name, we can read multiples variables 
+
+				* read -a myarray *
+
+Thats means:
+
+```
+~$ read -a myarray 
+1 2 3 4 5 
+~ echo ${myarray[@]}    #Show all the values
+1 2 3 4 5
+ 
+#If we want to write some message
+
+~$ read -p "Enter your array:" -a myarray 
+Enter your array: 12 23 45 23 67
+~$ echo "{$myarray[@]}"
+12 23 45 23 67
