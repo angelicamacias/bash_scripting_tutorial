@@ -1,4 +1,4 @@
-# What is an array?
+## What is an array?
  
 An Array is the data structure of the shell which is used to sotre multiple letters or simply. An array using some
 kind of variable which is used to store multiple data or multiple values. 
@@ -24,7 +24,7 @@ And we can also declare our array explicitly by using the clear command, so just
 declare -a NerArray
 NewArray=(1 2 3 4 5 bash scripting) 
 ```
--How to access array values?
+## How to access array values?
 
 Bash Shell array is the zero base, this means indexing start with zero. This means:
 If we have this array 
@@ -71,7 +71,7 @@ If we want to display all values but only the last 4 values, that means after po
 ~ echo "${x[@:3]}"
 ls -lrt
 
-#If we want a range of values. This represents start form position one (:1) and the next (:2) how many 
+#If we want a range of values. This represents start form position one *(:1)* and the next *(:2)* how many 
 values you cant to bring from this.   
 ~ x =(3 5 6.7 "ls -lrt")
 ~ echo "${x[@:1:2]}"
@@ -87,7 +87,7 @@ values you cant to bring from this.
 ~ echo "${#x[@:1]}"
 4
 ```
-# How to store the commands output in a normal variable?
+## How to store the commands output in a normal variable?
 
 For store a commands output in a normal variable we need follow this syntax
 				* unset <nameArray> *
@@ -102,7 +102,7 @@ But if we want update an existing array
 ~$ echo "${myarray[@]}"
 1 2 3 4 5 6
 
--How to read array using read command?
+## How to read array using read command?
 
 So using -a and varable name, we can read multiples variables 
 
