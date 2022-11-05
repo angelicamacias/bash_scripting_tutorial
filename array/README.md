@@ -1,4 +1,5 @@
- -What is an array?
+# What is an array?
+ 
 An Array is the data structure of the shell which is used to sotre multiple letters or simply. An array using some
 kind of variable which is used to store multiple data or multiple values. 
 
@@ -87,6 +88,6 @@ values you cant to bring from this.
 ~ echo "${#x[@:1]}"
 4
 ```
--How to store the commands output in a normal variable?
+# How to store the commands output in a normal variable?
 
 For store a commands output in a normal variable we need follow this syntax
