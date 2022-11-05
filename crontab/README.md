@@ -34,7 +34,7 @@ This symbol " * " represent all the possible unit for example:
 58 * * * *  /root/my_website_bakup.sh #Every month, weekday, day, hour.
 * * * * *  /root/my_website_bakup.sh #Every month, weekday, day, hour and minute.
 ```
-Suppose we want to do a crontab in to times on a day, like 9:00a.m. and 21:00 p.m.
+Suppose we want to do a crontab in two times on a day, like 9:00a.m. and 21:00 p.m.
 ```
 0 9,21 * * * /root/my_website_bakup.sh
 ```
