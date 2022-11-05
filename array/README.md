@@ -16,7 +16,7 @@ In this case
 myarray=("ls -lrt" "hostname -s")
 ```
 
-How between the command *ls -lrt* we have a space the array would read two values ls and -lrt, for that we need use "" with
+How between the command *ls -lrt* we have a space the array would read two values *ls* and *-lrt*, for that we need use *""* with
 this the arrey would read like an one value.
 
 And we can also declare our array explicitly by using the clear command, so just declare. (NewArray is a variable name)
