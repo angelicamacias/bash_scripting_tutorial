@@ -43,7 +43,7 @@ For display all the values inside the array, so in that case, this syntax to pri
 
 ```
 ~ x =(3 5 6.7 "ls -lrt")
-~ echo "${x[*]}"
+~ echo "${x[ * ]}"
 3 25 6.7  ls -lrt
 
 ```
@@ -59,7 +59,6 @@ If we want to display all values of our array we use this syntax
 ~ x =(3 5 6.7 "ls -lrt")
 ~ echo "${x[@]}"
 3 5 6.7  ls -lrt
-
 ```
 If we want to display all values but only the last 4 values, that means after positon one:
 
@@ -97,7 +96,7 @@ But if we want update an existing array
 
 
 ```
-# With @ we call to all values 
+#With @ we call to all values 
 ~$ myarray=(1 2 3)
 ~$ Myarray+=(4 5 6)
 ~$ echo "${myarray[@]}"
@@ -107,7 +106,7 @@ But if we want update an existing array
 
 So using -a and varable name, we can read multiples variables 
 
-				* read -a myarray *
+				*read -a myarray*
 
 Thats means:
 
@@ -118,8 +117,9 @@ Thats means:
 1 2 3 4 5
  
 #If we want to write some message
-
+```
 ~$ read -p "Enter your array:" -a myarray 
 Enter your array: 12 23 45 23 67
 ~$ echo "{$myarray[@]}"
 12 23 45 23 67
+```
