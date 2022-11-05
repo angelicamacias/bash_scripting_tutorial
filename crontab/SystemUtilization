@@ -1,0 +1,7 @@
+MailId="angelicasmaciasp@gamil.com"
+FU=$(df -H | grep /dev/xvda | awk '{ print $5 }' | tr -d "%")
+
+if [[ $FU -ge 80 ]]
+then 
+	echo "The file system /dev/xvda usage is: $FU" | /user/bin/mail -s "File system Utilization alert" "$MailId"
+fi 
