@@ -91,7 +91,7 @@ values you cant to bring from this.
 
 For store a commands output in a normal variable we need follow this syntax
 
-				**unset <nameArray>**
+				unset <nameArray>
 
 But if we want update an existing array 
 
@@ -107,7 +107,7 @@ But if we want update an existing array
 
 So using -a and varable name, we can read multiples variables 
 
-				**read -a myarray** 
+				read -a myarray
 
 Thats means:
 
