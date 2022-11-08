@@ -3,7 +3,7 @@ first conditional we are testing if the last command ($?) had success, if this d
 code will proceed to send a mail alert. 
 
 For that we need to know the directory of mail command, for know this we run **which mail**
-``
+```
 ~$ which mail 
 /user/bin/mail
 ``` 
