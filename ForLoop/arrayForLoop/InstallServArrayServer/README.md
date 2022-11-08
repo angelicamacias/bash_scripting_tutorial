@@ -13,6 +13,7 @@ If we want to send a mail alert in a specific time, we need to use a crontab, fo
 ```
 ~$ crontab -e  #maybe we will need sudo privileges ---> sudo crontab -e 
 ```
+
 we need to remember that for create a crontab we know the direcotry and places in in a file named for your
 current user name (/home/automation/practice/monitoryservies.sh). So, in this case we are programing a crontab for senad an alert massage every minute, hour, day, month, etc.
 
