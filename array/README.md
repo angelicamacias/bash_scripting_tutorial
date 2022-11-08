@@ -34,7 +34,7 @@ myarray=(23 4 5 6 8)
 For this values inside tha arrey have a possition, this possition assing this way: 
 
 ```
-                   23              4             5               6             8
+                     23              4              5               6               8
 		Possition 0	Possition 1	Possition 2	Possition 3	Possition 4
 ```
 So Bash Shell give a value to the positions for each and avery data inside the array staring with zero. 
@@ -118,7 +118,7 @@ Thats means:
 1 2 3 4 5
  
 #If we want to write some message
-```
+
 ~$ read -p "Enter your array:" -a myarray 
 Enter your array: 12 23 45 23 67
 ~$ echo "{$myarray[@]}"
