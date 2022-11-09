@@ -1,35 +1,24 @@
- ==== REMOTE SERVER
+#REMOTE SERVER
 
+Using the command **ssh** you can connect with your remote server or you can login and be a remote server from your local, for doing that, need a username and password with IP for can login and do that by using would be terminal.
 
-Using the command **ssh** you can connect with your remote server or you can log in and be a remote server form
-your local, for do it, need a username and password with IP for can login and do that by using would be terminal.
+**For do it that we have two ways:**
 
+### 1.- Using password or password authentication 
 
-For do it that we have two ways:
-
-###1.- Using password or `1ssword authentication 
-
-So if you wanto to login with you remote server from your local server, then you have to use command ssh, 
-in your remote server username with what username you want to connect with your remote server or simply 
-username and then remote server IP 
-
+So if you wanto to login with you remote server from your local server, then you have to use command ssh, in your remote server username with what username you want to connect with your remote server or simply username and then remote server IP using password:
 ```
-using password:
-
-ssh user_name@remote iP
+						ssh user_name@remote iP
 ```
-And after taht, if you enter, it will prompt for password, you have to provide a password fot this the username 
-on your remote server so that you’re using it so you can able to log into that server. 
+And after that if you enter, it will prompt for password, you have to provide a password fot this username on your remote server so that you’re using it so you can able to log into that server. 
 
-example:, 
-
+*example:*
 So we wanto to login with the remote server using:
 
 ```
 [atomation@ip-172-31-94-102~]$ ssh testuser@54.197.76.200
 ```
-Here we have: ssh command then the username from the remote server then *@* for last the IP. After run that
-we have to provide the password
+Here we have: ssh command then the username from the remote server then *@* for last the IP. After run that we have to provide the password
 
 ```
 [atomation@ip-172-31-94-102~]$ ssh testuser@54.197.76.200
@@ -46,8 +35,7 @@ We can also login to remote server without username, in this way:
 ssh remote_ip (here remote user name is same as local teminal user)
 ``
 
-The conditions that ssh will take the default username a the user which we are using on our local,
-and we will get: 
+The conditions that ssh will take the default username a the user which we are using on our local, and we will get: 
 
 ```
 [atomation@ip-172-31-94-102~]$ ssh testuser@54.197.76.200
@@ -55,8 +43,7 @@ and we will get:
 ```
 
 
-NOTE: vi /etc/ssh/sshd_cofig (Make it; PasswordAuthentication yes) if it’s dosen’t connectwith it from your
-local server. 
+**NOTE**: vi /etc/ssh/sshd_cofig (Make it; PasswordAuthentication yes) if it’s dosen’t connectwith it from your local server. 
 
 ###2.- Using passwordless
 
@@ -72,20 +59,18 @@ Enter same passphrase again:
 etc.. 
 etc..
 ```
-With this we will create the direcoty on you local server “.ssh”  into this directory we will get two files 
+With this we will create the direcoty on you local server **.ssh**  into this directory we will get two files: 
 
 ```
 [atomation@ip-172-31-94-102.ssh]$ ls 
 id_rsa id_rsa.pub
 ```
-The private is: id_rsa
-The public is: id_rsa.pub 
+The *private* is: id_rsa
+The *public* is: id_rsa.pub 
 
-If you want to work with your remote server first, you need to changes this key **id_res.pub** with your 
-remote server, with respecto to your required username, this means if you want to work with the best user 
-on my remote server. 
+If you want to work with your remote server first, you need to changes this key **id_res.pub** with your remote server, with respecto to your required username, this means if you want to work with the best user on the remote server. 
 
-we wanto to login with my remote server using **testuser** without password, so:
+we wanto to login with my remote server **testuser** without password, so:
 
 ```
 [atomation@ip-172-31-94-102.ssh]$ ssh-copy-id testuser@54.197.76.200 (<-- IP)
@@ -112,8 +97,7 @@ Then we have to go to the remote server
 . .. .bash_history .bash_logout .bash_profile .bashrc **.ssh**
 [testuser@ip-172-88-242]$
 ```
-So nobody is tatting your key with your remote server on. The remotes are also not associated with ssh 
-directly, this means:
+So nobody is tating your key with your remote server on. The remotes are also not associated with ssh directly, this means:
 
 ```
 [testuser@ip-172-88-242]$ ls
@@ -123,8 +107,7 @@ ssh-rsa DGAfvhadofgihbdfnjkvbhdpifgho’dng;isdfhnsdifijsdmflv;daghvpaeh;gnvk/iS
 aegdfavdb;/’”Orihfda;lvhiubjkerlgmd’fpv;jba knelrmfd’oiui
 [testuser@ip-172-88-242 .ssh]$
 ```
-This is the key publicly, which we ahre from a local server to remote server. Once you share your keys with your 
-remote server if you use *ssh** with your partner user:
+This is the key publicly, which we ahre from a local server to remote server. Once you share your keys with your remote server if you use *ssh** with your partner user:
 
 ```
 [automation@ip-172-88-242 .ssh]$ ssh-copy-id testuser@54.197.76.200
@@ -134,16 +117,11 @@ Last Login: Mon Dec 2 14:15:36 2022
 Then you don’t need to provide password, directly login and see that now we are within, without asking password. 
 
 
-=========================================================================================
-Executing commands on remote server 
+##Executing commands on remote server 
 
-We are using ssh to execute our commands on remote server, for do it that we have two ways to execute your 
-commands on remote server using **ssh**, and these two ways are applicabrle for you were both password 
-and password les authentication environments. 
+We are using ssh to execute our commands on remote server, for do it that we have two ways to execute your commands on remote server using **ssh**, and these two ways are applicabrle for you were both password and password les authentication environments. 
 
-
-
-First way: 
+###First way: 
 
 1.- Login into your remote server 
 
@@ -157,24 +135,21 @@ ssh user-name@remote_server
 NOTE: This is not good for automation 
 
 
-Second way:
+###Second way:
 1.- ssh user_name@remote_server “command”
 2.- Provide the password if it is password authentication connection 
-
+```
 [automation@ip-172-88-242 .ssh]$ ssh automation@54.91.148.214 “date”
 automation@’54.91.148.241’s password:
+```
 
-
--------------------------------------
-
-But this isn’t good for have automation, so we will implement a shell script to automate to connect with the
-remote server. So...
+But this isn’t good for have automation, so we will to automate to connect with the remote server. So...
 
 If you try to connecto for first time, then it will to ask:
-	Are you sure you wanto to continue connecting (yes/no)?
+				
+				Are you sure you wanto to continue connecting (yes/no)?
 
-But we don’t wanto to give that information, we want to login without the “ask confirmation”, we anto to make it 
-as by default the answer be yes. For doing that we need run **man ssh**
+But we don’t wanto to give that information, we want to login without the “ask confirmation”, we anto to make it as by default the answer be *yes*. For doing that we need run **man ssh**
 
 ```
 [automation@ip-172-88-242]$ man ssh 
@@ -196,8 +171,7 @@ With the *No* we say “don’t ask”, but will keep asking for password, if we
 Warning: Permanently added ‘54.91.148.241’ (ECDSA) to the list of known hosts. 
 automation@’54.91.148.241’s password: 
 ```
-So all the output from this line “ssh -o StrictHostKeyChecking=No automation@54.91.148.241 “date” “
-can be assigned to a variable:
+So all the output from this line “ssh -o StrictHostKeyChecking=No automation@54.91.148.241 “date”" can be assigned to a variable:
 
 ```
 $ server_1_date=$(ssh -o StrictHostKeyChecking=No automation@54.91.148.241 “date”
@@ -209,9 +183,7 @@ And we can put all the standar output by this variable in a file for this way:
 $ server_1_date=$(ssh -o StrictHostKeyChecking=No automation@54.91.148.241 “date” > server1_info.txt
 Tus Nov 11 04:32:25 UTC2022
 ```
-In the same way but using “ >> “ you can put another command into the same file, we will use “ >> “ because
-we wanto stay with the other command that we punt in the file:
-
+In the same way but using “ >> “ you can put another command into the same file, we will use “ >> “ because we want to keep the other command that we put in the file:
 
 ```
 $ server_1_date=$(ssh -o StrictHostKeyChecking=No automation@54.91.148.241 “uptime >> server1_info.txt
@@ -226,8 +198,7 @@ Tus Nov 11 04:32:25 UTC2022
 ~$
 ```
 
-it’s important to mention that in some commands, we need an interaction with the remote server, for that commands
-we had to privide one more option for what that is called **-t**
+It’s important to mention that in some commands, we need an interaction with the remote server, for that commands we had to privide one more option for what that is called **-t**
 
 ```
 $ ssh -t -o StrictHostKeyChecking=No automation@54.91.148.241 “top”
@@ -238,12 +209,10 @@ connection to 54.91.148.241 closed.
 ```
 And after run the commands this is closing the session.
 
-
-The problem here is that always need to provide the password and the command that we will need, for resolver 
-this problem we will creat the next code. 
+**NOTE** : The problem here is that always need to provide the password and the command that we will need, for resolver this problem we will creat the next code. 
 
 
-================= PROVIDING PASSWORD FOR SSH USING SSHPASS 
+##PROVIDING PASSWORD FOR SSH USING SSHPASS 
 
 Using sshpass we can provide password, this just assum that your environment is password authentication.
 This means whenever if you’re trying to login into remote server from you local server it needs a password:
