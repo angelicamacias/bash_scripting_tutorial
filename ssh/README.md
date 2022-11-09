@@ -47,7 +47,7 @@ The conditions that ssh will take the default username a the user which we are u
 
 **NOTE**: vi /etc/ssh/sshd_cofig (Make it; PasswordAuthentication yes) if it’s dosen’t connectwith it from your local server. 
 
-###2.- Using passwordless
+### 2.- Using passwordless
 
 We need to generate a ssh key:
 
