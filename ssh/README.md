@@ -214,8 +214,7 @@ And after run the commands this is closing the session.
 
 ## PROVIDING PASSWORD FOR SSH USING SSHPASS 
 
-Using sshpass we can provide password, this just assum that your environment is password authentication.
-This means whenever if you’re trying to login into remote server from you local server it needs a password:
+Using sshpass we can provide password, this just assum that your environment is password authentication.This means whenever if you’re trying to login into remote server from you local server it needs a password:
 
 ```
 $ ssh -t -o StrictHostKeyChecking=No automation@54.91.148.241 “date”
@@ -232,9 +231,7 @@ We can to use this in many ways:
 
 ## option -p
 
-We can to run this command and see all the options, in this cease we will use the option **-p** because with 
-this options we can provide password as argument, so the line command will:
-
+We can to run this command and see all the options, in this cease we will use the option **-p** because with this options we can provide password as argument, so the line command will:
 
 ```
 ~]$ sshpass -p “automation@123” ssh -t -o StrictHostKeyChecking=No automation@54.91.148.241 “date”
@@ -242,33 +239,30 @@ Tus Nov 11 04:32:25 UTC2022
 connection to 54.91.148.241 closed. 
 ```
 
-After the **shhpass -p** we need to provide password for the remote server, and if we run that we will see 
-that don't ask for a password. 
-
-Abstrac: In this point we can run any command for the remote server from our local server without the ask 
-and password.
+After the **shhpass -p** we need to provide password for the remote server, and if we run that we will see that don't ask for a password. 
  
 ## option -f 
 
-Another way is to provide a file, where is the password of the remote server
+Another way is to provide a file, where is the password of the remote server.
 
-Firs we need to create a file 
+Firs we need to create a file that have the password of remote server. 
 
 ```
-
 ~]$ vi pass
-
+      |
+      |
+      V
 automation@123
-
 ```
-So now we need the option **-f** because the line command can to read the file where is the password, it’s 
-meas:
+So now we need the option **-f** because the line command can to read the file where is the password, it’s meas:
 ```
-sshpass -f pass ssh -t -o StrictHostKeyChecking=No automation@54.91.148.241 “date”
+~]$ sshpass -f pass ssh -t -o StrictHostKeyChecking=No automation@54.91.148.241 “date”
+Tus Nov 11 04:32:25 UTC2022
+connection to 54.91.148.241 closed. 
 ```
 ## option -e
 
-With this option we can to export the passwor in this way: 
+With this option we can to export the password in this way: 
 
 ```
 ~]$ export SSHPASS=“automation@123”
@@ -282,3 +276,4 @@ With this option you have to provide a secure variable, you need to export as a 
 
 NOTE: For install the command sshpss: yum install sshpass or sudo yum install sshpass ooor search the page
 epel for rhel 8 beta
+Abstrac: In this point we can run any command for the remote server from our local server without the ask and password.
