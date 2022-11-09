@@ -1,7 +1,8 @@
 # REMOTE SERVER
 
 Using the command **ssh** you can connect with your remote server or you can login and be a remote server from your local, for doing that, need a username and password with IP for can login and do that by using would be terminal.
-![My Image]()
+
+![sshdiagram](https://user-images.githubusercontent.com/114703394/200713320-b180ee05-18a0-4a31-9127-5e75f0b58712.png)
 
 **For do it that we have two ways:**
 
