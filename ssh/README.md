@@ -12,7 +12,7 @@ So if you wanto to login with you remote server from your local server, then you
 ```
 And after that if you enter, it will prompt for password, you have to provide a password fot this username on your remote server so that you’re using it so you can able to log into that server. 
 
-*example:*
+*Example:*
 So we wanto to login with the remote server using:
 
 ```
@@ -24,16 +24,16 @@ Here we have: ssh command then the username from the remote server then *@* for 
 [atomation@ip-172-31-94-102~]$ ssh testuser@54.197.76.200
 testuser@54.197.76.200’s password:*********
 Last Login: Mon Nov  2 13:42:46 2022 from 3.84.199.94
-[ **testuser** @ip-172-31-94-102~]$ #Here we can see that the username changes automation--->testuser 
+[testuser@ip-172-31-94-102~]$          #Here we can see that the username changes automation--->testuser 
 ```
-so that you can login with the password. For out from the remote just run ** exit ** 
+so that you can login with the password. For out from the remote just run **exit** 
 
 
 We can also login to remote server without username, in this way:
 
 ```
 ssh remote_ip (here remote user name is same as local teminal user)
-``
+```
 
 The conditions that ssh will take the default username a the user which we are using on our local, and we will get: 
 
@@ -79,7 +79,7 @@ text...
 Are you sure you want to continue connecting (yes/no)? ** yes **
 text...
 text...
-**automation** @54.197.76.200’s password:
+automation@54.197.76.200’s password:
 
 #Then says to you that you are giving your key as
 
@@ -94,7 +94,7 @@ Then we have to go to the remote server
 [root@ip-172-31-88-242 ec2-user]# sudo su testuser
 [testuser@ip-172-88-242 ec2-user]$ cd
 [testuser@ip-172-88-242]$ ls -a 
-. .. .bash_history .bash_logout .bash_profile .bashrc **.ssh**
+. .. .bash_history .bash_logout .bash_profile .bashrc .ssh
 [testuser@ip-172-88-242]$
 ```
 So nobody is tating your key with your remote server on. The remotes are also not associated with ssh directly, this means:
@@ -107,7 +107,7 @@ ssh-rsa DGAfvhadofgihbdfnjkvbhdpifgho’dng;isdfhnsdifijsdmflv;daghvpaeh;gnvk/iS
 aegdfavdb;/’”Orihfda;lvhiubjkerlgmd’fpv;jba knelrmfd’oiui
 [testuser@ip-172-88-242 .ssh]$
 ```
-This is the key publicly, which we ahre from a local server to remote server. Once you share your keys with your remote server if you use *ssh** with your partner user:
+This is the key publicly, which we ahre from a local server to remote server. Once you share your keys with your remote server if you use **ssh** with your partner user:
 
 ```
 [automation@ip-172-88-242 .ssh]$ ssh-copy-id testuser@54.197.76.200
@@ -117,7 +117,7 @@ Last Login: Mon Dec 2 14:15:36 2022
 Then you don’t need to provide password, directly login and see that now we are within, without asking password. 
 
 
-## Executing commands on remote server 
+## EXECUTING COMMANDS ON REMOTE SERVER
 
 We are using ssh to execute our commands on remote server, for do it that we have two ways to execute your commands on remote server using **ssh**, and these two ways are applicabrle for you were both password and password les authentication environments. 
 
