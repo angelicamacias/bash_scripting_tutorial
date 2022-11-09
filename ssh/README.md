@@ -276,6 +276,8 @@ With this option you have to provide a secure variable, you need to export as a 
 “sshpass”
 
 
-NOTE: For install the command sshpss: yum install sshpass or sudo yum install sshpass ooor search the page
+**NOTE**: For install the command sshpss: yum install sshpass or sudo yum install sshpass ooor search the page
 epel for rhel 8 beta
-Abstrac: In this point we can run any command for the remote server from our local server without the ask and password.
+
+
+**Abstrac: In this point we can run any command for the remote server from our local server without the ask and password.**
