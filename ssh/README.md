@@ -1,4 +1,4 @@
-#REMOTE SERVER
+# REMOTE SERVER
 
 Using the command **ssh** you can connect with your remote server or you can login and be a remote server from your local, for doing that, need a username and password with IP for can login and do that by using would be terminal.
 
@@ -117,11 +117,11 @@ Last Login: Mon Dec 2 14:15:36 2022
 Then you don’t need to provide password, directly login and see that now we are within, without asking password. 
 
 
-##Executing commands on remote server 
+## Executing commands on remote server 
 
 We are using ssh to execute our commands on remote server, for do it that we have two ways to execute your commands on remote server using **ssh**, and these two ways are applicabrle for you were both password and password les authentication environments. 
 
-###First way: 
+### First way: 
 
 1.- Login into your remote server 
 
@@ -135,7 +135,7 @@ ssh user-name@remote_server
 NOTE: This is not good for automation 
 
 
-###Second way:
+### Second way:
 1.- ssh user_name@remote_server “command”
 2.- Provide the password if it is password authentication connection 
 ```
@@ -153,7 +153,7 @@ But we don’t wanto to give that information, we want to login without the “a
 
 ```
 [automation@ip-172-88-242]$ man ssh 
-------------
+
 #here we will go to the option **-o** and copy the option:
 
 “StrictHostKeyChecking”
@@ -212,7 +212,7 @@ And after run the commands this is closing the session.
 **NOTE** : The problem here is that always need to provide the password and the command that we will need, for resolver this problem we will creat the next code. 
 
 
-##PROVIDING PASSWORD FOR SSH USING SSHPASS 
+## PROVIDING PASSWORD FOR SSH USING SSHPASS 
 
 Using sshpass we can provide password, this just assum that your environment is password authentication.
 This means whenever if you’re trying to login into remote server from you local server it needs a password:
@@ -256,8 +256,7 @@ Firs we need to create a file
 
 ```
 
-~]$ vi pass 
------------
+~]$ vi pass
 
 automation@123
 
