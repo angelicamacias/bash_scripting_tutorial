@@ -1,0 +1,11 @@
+#!/bin/bash
+
+while read ser user pass cmd1 cmd2
+do 
+	echo “Executing $cmd1 on $ser whith user as $user and password $pass”
+	sshpass -p $pass ssh -o  StrictHostKeyChecking=No $user@$ser “$cmd”
+	echo”---------------------------------------------------------------”
+	echo “Executing $cmd2 on $ser whith user as $user and password $pass”
+	sshpass -p $pass ssh -o  StrictHostKeyChecking=No $user@$ser “$cmd”
+	echo “==============================================================”
+done < server_info.txt
