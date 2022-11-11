@@ -12,7 +12,7 @@ Infinity while loop:
 		statemants/commands
 	done 
 ```
-                            or 
+or 
 			    
 ```
 
