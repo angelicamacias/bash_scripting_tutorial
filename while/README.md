@@ -1,4 +1,4 @@
- # While loop syntaxes 
+ # While loop syntax
 
 
 ### Different ways to use while loop:
