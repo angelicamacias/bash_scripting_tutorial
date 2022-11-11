@@ -1,4 +1,4 @@
-## Name: Shell script to execute different commands on differents servers with different users and different password 
+## *NAME:* Shell script to execute different commands on differents servers with different users and different password 
 
 
 
