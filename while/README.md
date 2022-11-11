@@ -30,7 +30,7 @@ or
 		statements/commands
 	done 
 ```
-			or
+or
 ```
 	while [[ 3 -gt 5 ]]
 	do 
