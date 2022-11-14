@@ -1,16 +1,16 @@
-
-AWK 
-
+CREAT A INDEXXXXX
 
 
-What is awk?
+# AWK 
 
-The awk command is programming language, which requires no compiling, and allows
-the user to use variables, numeric functions, string functions, and logial operatores.
+## What is awk?
+
+The awk command is programming language, which requires no compiling, and allows the user to use variables, numeric functions, string functions, and logial operatores.
 The awk command in Unix is juts like a scripting language which is used for text processing. 
 
 
 Example
+
 If we are runing this command we will get all this information:
 ```
 ~]$ systemctl status httpd 
@@ -22,15 +22,12 @@ httpd.service - The Apache HTTP Server
 ~]$
 
 ```
-But we don't to display all the information, we just wanto to get only the status,
-exactly ther it's inactive of active, this information is in:
+But we don't to display all the information, we just wanto to get only the status, exactly ther it's inactive of active, this information is in:
 
 -thir line
 -second column 
 
 for that we have to run: 
-
-
 ```
 ~]$ systemctl status httpd | awk 'NR==3 { pirnt $2 }'
 Inactive
