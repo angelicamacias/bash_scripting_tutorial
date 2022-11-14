@@ -377,7 +377,6 @@ ________________
 and then we run the file with the same command line, we will get: 
 
 ```
-```
 ~]$ awk '{ a=$1 ; b=$2; print "a="a, "b="b }' ab.txt 
 a=2 b=6
 a=5 b=6
