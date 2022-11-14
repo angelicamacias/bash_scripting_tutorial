@@ -370,7 +370,7 @@ and each statement is separate for a **;**, in the case that we add another line
 
 ```
 vi ad.txt
--------------
+________________
 2 6
 5 6
 ``` 
