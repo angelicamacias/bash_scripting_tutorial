@@ -258,7 +258,7 @@ Now we run the syntax using the oprion **-f** for execute the action from a file
 is 
 is 
 is
-`````
+```
 ## Exercise: Simple Hello world awk script
 
 This exercise is for show the ways to run a command awk. We wanto to print just a "Hello word" 
@@ -306,7 +306,7 @@ ____________________
 
 ~] awk -f helloword.awk 
 Hello World!!
-````
+```
 Without the shib line, because we are mentioning in the command line **awk** -f hellowrod.awk. 
 
 ## awk variables
@@ -340,7 +340,7 @@ First in a file we save the values:
 vi ab.txt
 _______
 2 6
-````
+```
 then following the second way: 
 
 ```
