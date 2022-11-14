@@ -275,7 +275,7 @@ Knowing this we can creat our script:
 
 ``` 
 vi helloword.awk 
--------------
+____________________
 
 #!/bin/awk -f
 BEGIN {
