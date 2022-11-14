@@ -297,7 +297,7 @@ But we can also run the scritp in this way
 
 ```
 vi helloword.awk 
-----------------
+____________________
 
 BEGIN {
   pring "Hello world!!"
