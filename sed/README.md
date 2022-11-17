@@ -1,12 +1,10 @@
-sed command
+# sed command
 
-===> introduction to sed command 
+## introduction to sed command 
 
 What is sed? 
 
-sed command stands for stream editor, that means it is an a editr which is used to work on the 
-stream of data, if the data meaybe from your file or from the output of any command, so we can use 
-**sed** comman like an editor to work with any output comes from the any command or a file. 
+sed command stands for stream editor, that means it is an a editr which is used to work on the stream of data, if the data meaybe from your file or from the output of any command, so we can use **sed** comman like an editor to work with any output comes from the any command or a file. 
 
 sed command perform lot's of function on file like: 
 
@@ -45,19 +43,16 @@ sed [options] commands [file-to-work-with-sed]
 
 diapositivaaaaa 10!!!!!!!!!!!!!!!!!!
 
-So the command sed read line by line from your input on each and every line, executing each command from
-the syntax of sed, if the first line have success then it is displaying the result on the terminal, the 
-same for any line into the file or command.  
+So the command sed read line by line from your input on each and every line, executing each command from the syntax of sed, if the first line have success then it is displaying the result on the terminal, the same for any line into the file or command.  
 
-### functions
+### Functions
 
 
 - 1) Viewing file content
 
 - print 
 
-Viewing file content and delting file content based on line numbers. Frisr we will see the command sed 
-without options: 
+Viewing file content and delting file content based on line numbers. Frisr we will see the command sed without options: 
 
 ```
 sed '' file-to-work-with-sed
@@ -93,8 +88,7 @@ we can use the option **p** into the quotations, and we will get each line twice
 6 This is sixth line
 6 This is sixth line
 ```
-This is becasue with the option **p** we print each line, and with the command **sed** the same way 
-we can see each line into the file. For get just one time each line we have to use the option **-n**
+This is becasue with the option **p** we print each line, and with the command **sed** the same way we can see each line into the file. For get just one time each line we have to use the option **-n**
 
 ```
 ~]$ sed -n 'p' ad.txt 
@@ -108,8 +102,7 @@ we can see each line into the file. For get just one time each line we have to u
 
 ```
 
-if we want to see only some line in particular we will run **Np** into the quotations, being **N** the number of the 
-line that we want to see, for example if we want to see the second line need to run **2p** :
+if we want to see only some line in particular we will run **Np** into the quotations, being **N** the number of the line that we want to see, for example if we want to see the second line need to run **2p** :
 
 ```
 ~]$ sed -n '2p' ad.txt 
@@ -126,7 +119,6 @@ for see the **last line** , in the case that we don't know the number of line we
 
 ```
 If we want to see the **range** of lines, in this case we want to see the range of the line 1 and 2:
-
 
 ```	
 ~]$ sed -n '1,2p' ad.txt 
@@ -156,10 +148,6 @@ in the case that we want to print the line with the diferences between each of t
 3 This is third line
 5 This is fifth line
 ```
-
-
-
-
 
 - delet 
 
@@ -223,14 +211,9 @@ if you want to delte empty lines permanently:
 
 - 2) searching file content 
 
+So assume that we have some number of lines in some file and want to print the lines which are having the required word or we wanto to delte the lines which are having the required work 
 
-
-So assume that we have some number of lines in some file and want to print the lines which are having 
-the required word or we wanto to delte the lines which are having the required work 
-
-
-so we have the next syntax for serach a specific word, between the **/word/**  we have to put the word that we 
-are searching 
+We have the next syntax for serach a specific word, between the **/word/**  we have to put the word that we are searching 
 
 ```
 ~]$ sed -n '/first/ ' ad.txt 
