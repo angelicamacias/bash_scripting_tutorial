@@ -8,20 +8,20 @@ sed command stands for stream editor, that means it is an a editr which is used 
 
 sed command perform lot's of function on file like: 
 
-- 1) Viewing file content
+ 1) Viewing file content
 
 You can review the content of your file, like a cat command  
 
-- 2) Seraching 
+ 2) Seraching 
 
 We can search particual words or pattern 
 
 
-- 3) find and replace 
+ 3) find and replace 
 
 We can replace a particular word
 
-- 4) isertion or deletion 
+ 4) isertion or deletion 
 
 If we cant to delete some lines or we want some content of the file, we cant delete or insert new data. 
 
