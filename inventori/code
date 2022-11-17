@@ -1,0 +1,11 @@
+#!/bin/bash 
+
+Server_Name=$(uname -n)
+IP_Address=$(ifconfig | grep inet | awk 'NR==1{print $2}')
+OS_Type=$(uname)
+Up_time=$(uptime | awk '{pirnt $3}')
+
+#Creating header in csv file 
+
+echo "S_No,Server_Name,IP_Address,OS_Type,Uptime" > server_info.csv
+echo "1,$Server_Name,$IP_Address,$OS_Type,$UP_time" >> server_info.csv
