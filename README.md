@@ -7,7 +7,7 @@ This is a tutorial I created when learning shell scripting with bash myself.
 3. etc...
 4. [ifelif](https://github.com/angelicamacias/bash_scripting_tutorial/tree/main/ifelif)
 5. [while](https://github.com/angelicamacias/bash_scripting_tutorial/tree/main/while)
-
+6. 
 
 
 
@@ -185,3 +185,19 @@ elif [[ $1 == "prod" ]]; then
         //series of different steps
 fi
 ```
+
+
+### awk vs sed 
+
+Some of the main differences between awk and sed are:
+
+sed is mainly used for basic text transformations, while awk is better suited for data extraction and manipulation.
+sed operates on a line-by-line basis, while awk operates on a record-by-record basis.
+awk has more powerful programming constructs, such as conditionals and loops, while sed has a more limited set of commands.
+awk has more advanced string manipulation capabilities than sed.
+In summary, while sed and awk share some common uses, they each have their own strengths and weaknesses, and are better suited for different types of text processing tasks.
+
+
+
+
+
